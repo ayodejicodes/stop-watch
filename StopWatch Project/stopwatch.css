@@ -1,0 +1,128 @@
+/* Global Styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --main-color: #ffb300;
+  --sec-color: #747474;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(images/girl-sitting-on-sofa-while-using-tablet-computer-4144035.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+a,
+.logo,
+button {
+  cursor: pointer;
+}
+
+button {
+  padding: 0.6em;
+  border: none;
+  border-radius: 2.5px;
+  color: white;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* Nav Styling */
+
+nav {
+  height: 10vh;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+.reset {
+  background-color: var(--sec-color);
+  padding: 0.6em;
+  border: none;
+  border-radius: 2.5px;
+  color: white;
+}
+
+/* Main Section Styling */
+
+section {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stop-watch-circle {
+  width: 18em;
+  height: 18em;
+  background-color: var(--sec-color);
+  margin-bottom: 4em;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.duration-rectangle {
+  position: absolute;
+  background-color: white;
+  width: 70%;
+  height: 25%;
+  color: var(--sec-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.inner-section {
+  text-align: center;
+}
+
+.duration {
+  position: absolute;
+  top: 13.5em;
+  pointer-events: none;
+}
+
+.start-stop-buttons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 5rem;
+}
+
+.start-stop-buttons .btn {
+  font-size: 1.1rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: var(--main-color);
+}
+
+footer {
+  height: 5vh;
+  color: var(--sec-color);
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
